@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        sans-serif;
+}
+
+
+/* =========================
+   最初のボタン画面
+   ========================= */
+
+#menu {
+
+    width: 100%;
+    height: 100%;
+
+    padding:
+        calc(30px + env(safe-area-inset-top))
+        25px
+        calc(30px + env(safe-area-inset-bottom));
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    background-color: white;
+}
+
+
+/* ボタン共通 */
+
+button {
+
+    width: 100%;
+    height: 150px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    font-size: 45px;
+    font-weight: bold;
+
+    color: white;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* グー */
+
+.goo {
+    background-color: #ff5f70;
+}
+
+
+/* チョキ */
+
+.choki {
+    background-color: #f4bd28;
+}
+
+
+/* パー */
+
+.paa {
+    background-color: #3f95e8;
+}
+
+
+/* 押した瞬間 */
+
+button:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================
+   画像表示画面
+   ========================= */
+
+#imageScreen {
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #8fc95c;
+}
+
+
+/* 画像 */
+
+#jankenImage {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
